@@ -19,7 +19,6 @@ public class CalcService {
     	if(null==data.getOperator() || data.getOperator().isEmpty()) data.setOperator("-");
         return calculate(data);
     }
-
     public double calculate(CalcInputData data) {
     	
         double result = 0;

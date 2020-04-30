@@ -20,4 +20,9 @@ public class CalcServiceTest {
     void subtract() {
         assertEquals(32.8, calcService.subtract(new CalcInputData(65, 32.2)));
     }
+    
+    @Test
+    void multiply() {
+        assertEquals(6.8, calcService.calculate(new CalcInputData(3.4, "*" ,2)));
+    }
 }
