@@ -2,8 +2,7 @@
 
 Microservicio Spring Boot, que ofrece funciones aritméticas básicas (+,-,*,/,^)
 
-Java 8
-Maven 3
+Requisitos: Java 8, Maven 3
 
 Pasos para la ejecución del código:
 1.- Hacer clone del repo
@@ -16,6 +15,7 @@ Bien con `mvn validate` o con `mvn install:install-file -Dfile=lib/tracer-1.0.0.
 
 4.- Levantar el servicio con: `java -jar target/calculator-0.0.1-SNAPSHOT .jar`
 Testarle desde la interface swagger: http://localhost:8080/swagger-ui.html
+(Puerto por defecto, en caso de querer cambiarle server.port=8081 en application.properties)
 
 5.- Chequear status del servicio: http://localhost:8080/actuator
 
@@ -26,8 +26,9 @@ Testarle desde la interface swagger: http://localhost:8080/swagger-ui.html
 8.-Versionado: Las clases consideradas que pueden cambiar con la versión, se han incluido en paquetes v1. Esta primera versión del servicio también responde por /v1/...
 
 Posibles mejoras: 
-- Aumentar tests (integrar jacoco para validar)
-- Incluir más comentarios
+- Aumentar funcionalidades
+- Incrementar tests (integrar jacoco para validar)
+- Incluir más comentarios, javadoc,...
 - Cerrar la interface para que solo se puedan incluir operadores contemplados.
 - Integrar otras funcionalidades del ecosistema microservicios (Autodescubrimiento, configuración central, gateway, balanceo, circuit breaker, ...)
 - Posibles optimizaciones librería de trazas, Implementación implemente el interface ..API, disponer de ella en un repo remoto.
@@ -42,8 +43,7 @@ Gracias!
 
 Spring Boot Microservice, which offers basic arithmetic functions (+, -, *, /, ^)
 
-Java 8
-Maven 3
+Requirements: Java 8, Maven 3
 
 Steps for code execution:
 
@@ -68,7 +68,7 @@ Test it from the swagger interface: http://localhost:8080/swagger-ui.html
 Possible improvements:
 - Expand functionality
 - Improve tests (integrate jacoco to validate...)
-- Include more comments
+- Include more comments, javadoc,...
 - Close the interface so that only contemplated operators can be included.
 - Integrate other functionalities of microservices ecosystem (Self-discovery, central configuration, gateway, ...)
 - Possible trace library optimizations, Implementation will implement the ..API interface, store it in a remote repo.
