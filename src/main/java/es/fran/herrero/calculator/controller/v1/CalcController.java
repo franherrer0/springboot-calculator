@@ -15,6 +15,10 @@ import es.fran.herrero.calculator.service.v1.CalcService;
 import lombok.extern.slf4j.Slf4j;
 
 
+/**
+ * @author fran
+ * Controller of the service: implemented v1 (to manage new versions in the future)
+ */
 @Slf4j
 @RestController
 @RequestMapping("/v1")

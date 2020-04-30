@@ -7,6 +7,10 @@ import org.junit.jupiter.api.Test;
 import es.fran.herrero.calculator.model.v1.CalcInputData;
 import es.fran.herrero.calculator.service.v1.CalcService;
 
+/**
+ * @author fran
+ * Minimum unit tests
+ */
 public class CalcServiceTest {
    
 	CalcService calcService = new CalcService();

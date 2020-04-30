@@ -4,6 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * @author fherrero
+ * Input data (request object) for POST method
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

@@ -1,5 +1,10 @@
 package es.fran.herrero.calculator.exception;
 
+
+/**
+ * @author fran
+ * CalcException for Calc Application
+ */
 public class CalcException extends RuntimeException {
 
 	private static final long serialVersionUID = 1L;

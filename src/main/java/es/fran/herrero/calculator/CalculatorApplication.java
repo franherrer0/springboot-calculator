@@ -5,6 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author fran
+ * Main class for the application
+ */
 @Slf4j
 @SpringBootApplication
 public class CalculatorApplication {

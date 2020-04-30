@@ -6,6 +6,11 @@ import es.fran.herrero.calculator.exception.CalcException;
 import es.fran.herrero.calculator.model.v1.CalcInputData;
 import io.corp.calculator.TracerImpl;
 
+/**
+ * @author fran
+ * Service with calc logic + "generic method"
+ */
+
 @Service
 public class CalcService {
 
@@ -20,8 +25,13 @@ public class CalcService {
     	if(null==data.getOperator() || data.getOperator().isEmpty()) data.setOperator("-");
         return calculate(data);
     }
-    
-    
+
+    /**
+     * Generic method to allow multiple operations
+     * @param data
+     * @return
+     * @throws CalcException
+     */
     public double calculate(CalcInputData data) throws CalcException{
     	
         double result = 0;
