@@ -26,11 +26,11 @@ Testarle desde la interface swagger: http://localhost:8080/swagger-ui.html
 8.-Versionado: Las clases consideradas que pueden cambiar con la versión, se han incluido en paquetes v1. Esta primera versión del servicio también responde por /v1/...
 
 Posibles mejoras: 
-- Aumentar funcionalidades
+- Aumentar funcionalidades (validación parámetros de entrada, desacoplar entrada y salida del servicio,...) 
 - Incrementar tests (integrar jacoco para validar)
 - Incluir más comentarios, javadoc,...
 - Cerrar la interface para que solo se puedan incluir operadores contemplados.
-- Integrar otras funcionalidades del ecosistema microservicios (Autodescubrimiento, configuración central, gateway, balanceo, circuit breaker, ...)
+- Integrar otras funcionalidades del ecosistema microservicios (Autodescubrimiento, configuración central, gateway, balanceo, ...)
 - Posibles optimizaciones librería de trazas, Implementación implemente el interface ..API, disponer de ella en un repo remoto.
 - ...
 
