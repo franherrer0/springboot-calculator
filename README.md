@@ -77,3 +77,29 @@ Possible improvements:
 For any questions, at your disposal.
 
 Thank you!
+
+
+```
+ab -n 10000 -c 10 http://localhost:8080/v1/calc/add/1.83/2
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.3      1       7
+Processing:     1   18  14.3     14     380
+Waiting:        1   17  13.6     14     379
+Total:          1   18  14.3     15     381
+ERROR: The median and mean for the initial connection time are more than twice t
+he standard
+       deviation apart. These results are NOT reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%     15
+  66%     19
+  75%     21
+  80%     23
+  90%     31
+  95%     38
+  98%     54
+  99%     70
+ 100%    381 (longest request)
+ ```
