@@ -17,13 +17,18 @@ Bien con `mvn validate` o con `mvn install:install-file -Dfile=lib/tracer-1.0.0.
 Testarle desde la interface swagger: http://localhost:8080/swagger-ui.html
 (Puerto por defecto, en caso de querer cambiarle server.port=8081 en application.properties)
 
-5.- Chequear status del servicio: http://localhost:8080/actuator
+5.- Chequear status del servicio: http://localhost:8080/actuator + prometheus http://localhost:8080/actuator/prometheus
 
 6.- El servicio dispone de tests de integración que corren durante la compilación, levantando un servicio en un puerto random.
 
 7.- El servicio consta de 2 operaciones GET guidadas y una POST que permite la selección del operador (Post por no tener problemas con los caracteres + / ...). La salida es una descripción de la operación interpretada y el resultado.
 
 8.-Versionado: Las clases consideradas que pueden cambiar con la versión, se han incluido en paquetes v1. Esta primera versión del servicio también responde por /v1/...
+
+Documentación: Updated documentation generation from swagger2 to openapi3
+http://localhost:8080/swagger-ui.html
+http://localhost:8080/v3/api-docs
+http://localhost:8080/v3/api-docs.yaml
 
 Posibles mejoras: 
 - Aumentar funcionalidades (validación parámetros de entrada, desacoplar entrada y salida del servicio,...) 
