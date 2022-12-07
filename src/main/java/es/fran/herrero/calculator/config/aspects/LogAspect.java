@@ -12,14 +12,17 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class LogAspect {
 
-	@Around("execution(* es.fran.herrero.calculator.service.v1.*.*(..))")
+	//@Around("execution(* es.fran.herrero.calculator.service.v1.*.*(..))")
+	//@Around("execution(* es.fran.herrero.calculator.controller.v1.*.*(..))")
+	@Around("execution(* es.fran.herrero.calculator.service.v1.*.*(..)) "
+			+ " or execution(* es.fran.herrero.calculator.controller.v1.*.*(..))")
 	public Object executeTime(ProceedingJoinPoint jPoint) throws Throwable {
 
 		Long time1 = System.currentTimeMillis();
 		Object proceed = jPoint.proceed();
 		Long time2 = System.currentTimeMillis();
 		Long total = time2 - time1;
-		if (total > 0 && jPoint.getSignature()!=null) {
+		if (total >= 0 && jPoint.getSignature()!=null) {
 			log.info(String.format("Method : %s execution time: %d\n", jPoint.getSignature().toString(), total));	
 		}
 		return proceed;
